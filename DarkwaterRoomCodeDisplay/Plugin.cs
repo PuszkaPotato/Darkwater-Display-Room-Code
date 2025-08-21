@@ -28,21 +28,26 @@ namespace DarkwaterRoomCodeDisplay
         [HarmonyPostfix]
         public static void CheckPlayerListStatus(UI_SettingsMenu __instance)
         {
-            // 1. Get the UI manager instance using the singleton pattern.
             CMD_UI uiManager = CMD_UI.Instance;
 
-            // 2. Add safety checks to prevent errors if something hasn't loaded yet.
             if (uiManager == null || uiManager.roomCodeDisplay == null || __instance.playerListPanel == null)
             {
                 return;
             }
 
-            // 3. Get a reference to the text object we want to control.
             TextMeshProUGUI roomCodeDisplay = uiManager.roomCodeDisplay;
 
-            // 4. This is your core logic: check the state of the player list and
-            //    set the visibility of the room code to match.
-            roomCodeDisplay.gameObject.SetActive(__instance.playerListPanel.activeInHierarchy);
+            if (__instance.playerListPanel.activeInHierarchy)
+            {
+                // If the player list is active, show the room code display
+                roomCodeDisplay.enabled = true;
+            }
+            else
+            {
+                // If the player list is not active, hide the room code display
+                roomCodeDisplay.enabled = false;
+            }
+
         }
     }
 }
