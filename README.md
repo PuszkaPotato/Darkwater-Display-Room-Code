@@ -6,8 +6,8 @@ A BepInEx mod for Darkwater that displays the room code on the UI when the playe
 - Shows the room code when the player list is visible.
 - Automatically hides the code when the player list is closed.
 
-## Installation
-1. Install [BepInEx](https://github.com/BepInEx/BepInEx) for Darkwater.
+## Manual Installation
+1. Install [BepInEx](https://github.com/BepInEx/BepInEx) for Darkwater or from [Thunderstore](https://thunderstore.io/c/darkwater/p/BepInEx/BepInExPack/).
 2. Download this mod's DLL from the releases.
 3. Place the DLL in your `BepInEx/plugins` folder.
 
@@ -17,4 +17,9 @@ Open the player list in-game to see the room code displayed. Close the list to h
 ## Support
 For issues or suggestions, open an issue on [GitHub](https://github.com/PuszkaPotato/Darkwater-Display-Room-Code/issues).
 
+## Credits
+Created by Veronica (PuszkaPotato)
+
+## License
+MIT
 ---
