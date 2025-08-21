@@ -5,7 +5,7 @@ using TMPro;
 
 namespace DarkwaterRoomCodeDisplay
 {
-    [BepInPlugin("eu.puszkapotato.darkwater.roomcodedisplay", "Darkwater Display Room Code", "1.0.0")]
+    [BepInPlugin("eu.puszkapotato.darkwater.roomcodedisplay", "Darkwater Display Room Code", "1.0.1")]
     public class Plugin : BaseUnityPlugin
     {
         internal static ManualLogSource Log;

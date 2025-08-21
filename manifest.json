@@ -1,6 +1,6 @@
 {
     "name": "Display Room Code",
-    "version_number": "1.0.0",
+    "version_number": "1.0.1",
     "website_url": "https://github.com/PuszkaPotato/Darkwater-Display-Room-Code",
     "description": "Displays the room code in Darkwater when the player list is open. Makes sharing and joining rooms easier. Simple, lightweight, and user-friendly.",
     "dependencies": []
